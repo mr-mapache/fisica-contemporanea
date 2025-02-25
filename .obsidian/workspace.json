@@ -1,0 +1,220 @@
+{
+  "main": {
+    "id": "e3049a7a8285f2c4",
+    "type": "split",
+    "children": [
+      {
+        "id": "6871bd1de5c1fb7a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "df18a644f83a44c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pages/Física de Partículas/Dispersión de particulas/Aniquilación electrón-positrón.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Aniquilación electrón-positrón"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c13d9653224263c9",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e679bd9633f5a6b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "68fcab1a43c9ece7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "fec2b3a433217356",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "1bc1d963182d5e5b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 365.5
+  },
+  "right": {
+    "id": "34e879327ab427bb",
+    "type": "split",
+    "children": [
+      {
+        "id": "06a623c2c4a73248",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4ee0c7ad7b43cae0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/Estructura molecular.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de Estructura molecular"
+            }
+          },
+          {
+            "id": "d631a892c07231b2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/Estructura molecular.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de Estructura molecular"
+            }
+          },
+          {
+            "id": "e9f9200e37c9d591",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "6d8eb16d1b42174a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/Estructura molecular.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de Estructura molecular"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "df18a644f83a44c2",
+  "lastOpenFiles": [
+    "pages/Física de Partículas/Dispersión de particulas/Dispersión electrón-muón.md",
+    "pages/Física de Partículas/Dispersión de particulas/Reglas de Feynman.md",
+    "pages/Física de Partículas/Dispersión de particulas/La regla de oro.md",
+    "pages/Física de Partículas/Dispersión de particulas/Efecto Compton.md",
+    "pages/Física de Partículas/Dispersión de particulas/Aniquilación electrón-positrón.md",
+    "Pasted image 20250224182212.png",
+    "Pasted image 20250224182254.png",
+    "pages/assets/20250224183436.png",
+    "Pasted image 20250224183406.png",
+    "Pasted image 20250224182603.png",
+    "Pasted image 20250224182548.png",
+    "Pasted image 20250224182500.png",
+    "Pasted image 20250224182432.png",
+    "Pasted image 20250224182418.png",
+    "Pasted image 20250224182401.png",
+    "pages/Física de Partículas/Ecuación de Dirac.md",
+    "El átomo de hidrogeno.md",
+    "pages/Física Molecular/La molécula de hidrogeno.md",
+    "pages/stylesheets/custom.css",
+    "pages/stylesheets",
+    "site/stylesheets/custom.css",
+    "site/stylesheets",
+    "stylesheets/custom.css",
+    "stylesheets",
+    "pages/Física Molecular/Interacción de Van Der Wals.md",
+    "pages/Física Molecular/Espectros rotacionales y vibracionales.md",
+    "pages/Física Molecular/El enlace iónico.md",
+    "pages/Física Nuclear/Estructura nuclear.md",
+    "pages/Física Nuclear/Desintegración beta.md",
+    "pages/Física Nuclear/Desintegración alfa.md",
+    "pages/Bienvenido.md",
+    "pages/Física de Partículas/Fotones.md",
+    "docs/Física de Partículas/Dispersión de particulas/La regla de oro.md",
+    "docs/Física de Partículas/Dispersión de particulas/Dispersión electrón-muón.md",
+    "docs/Física de Partículas/Dispersión de particulas/Reglas de Feynman.md",
+    "docs/Física de Partículas/Fotones.md",
+    "docs/Física de Partículas/Dispersión de particulas/Efecto Compton.md",
+    "Reglas de Feynman.md",
+    "docs/Física de Partículas/Ecuación de Dirac.md",
+    "docs/Física Nuclear/Estructura nuclear.md",
+    "docs/Física Nuclear/Desintegración beta.md",
+    "Sin título.canvas",
+    "docs/Física de Partículas/Dispersión de particulas",
+    "Sin nombre 1",
+    "docs/Física de Partículas/QED",
+    "docs/Física de Partículas"
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "main": {
+    "id": "e822051c188d3c5f",
+    "type": "split",
+    "children": [
+      {
+        "id": "b0b60a1589397637",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "da314174041c3a15",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nueva pestaña"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "412351d212439af0",
+    "type": "split",
+    "children": [
+      {
+        "id": "3a1bc88741fab002",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "783b7416814febd4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "55af3cc080e42d3d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "5af769c35abf3cf5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "783b2ae45cf1fe1e",
+    "type": "split",
+    "children": [
+      {
+        "id": "65edd348ca9f9e3e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ca9649d235bffb67",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Bienvenido.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de Bienvenido"
+            }
+          },
+          {
+            "id": "21edee561313a14f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Bienvenido.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de Bienvenido"
+            }
+          },
+          {
+            "id": "26955a18f1bd9b91",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "c9f70d05f82f97d5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Bienvenido.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de Bienvenido"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "da314174041c3a15",
+  "lastOpenFiles": [
+    "Física Nuclear/Desintegración beta.md",
+    "Física Nuclear/Desintegración alfa.md",
+    "Física Molecular/Espectros moleculares.md",
+    "Física Molecular/Espectos.md",
+    "Física Nuclear/Estructura nuclear.md",
+    "Física Nuclear/Sin título.md",
+    "Física Nuclear",
+    "Física Molecular/Espectroscopia.md",
+    "Física Molecular/Sin título.md",
+    "Física Molecular/El enlace iónico.md",
+    "Física Molecular/Interacción de Van Der Wals.md",
+    "Física Molecular/El enlace ionico.md",
+    "Física Molecular/Estructura molecular.md",
+    "Estructura molecular.md",
+    "Pasted image 20250213012003.png",
+    "Pasted image 20250213011053.png",
+    "Pasted image 20250213010234.png",
+    "Pasted image 20250213005053.png",
+    "Pasted image 20250213005025.png",
+    "Pasted image 20250213004530.png",
+    "Física Molecular",
+    "Relatividad general/Sin título.md",
+    "Bienvenido.md",
+    "Relatividad general",
+    "Relatividad",
+    "física-nuclear/Desintegración alfa.md",
+    "física-nuclear/Desintegración beta.md",
+    "desktop.ini"
+  ]
+}
