@@ -25,7 +25,7 @@ El ritual para calcular la sección transversal de un proceso de dispersión se 
 
 $$ 
 \begin{aligned}
-\sigma = \frac{\hbar S}{4\sqrt{(p_1 \cdot p_2)^2 - (m_1 m_2 c^2)^2}} \int (2\pi)^4|\mathcal{M}|^2 \delta^4(p_1 + p_2 - p_3 - ...-p_n) \\ \times \prod_{j=3}^N 2\pi \delta(p_j^2 - m_j^2c^2)\theta(p^0_j) \frac{d^4p_j}{(2\pi)^4}
+\sigma = \frac{\hbar^2 S}{4\sqrt{(p_1 \cdot p_2)^2 - (m_1 m_2 c^2)^2}} \int (2\pi)^4|\mathcal{M}|^2 \delta^4(p_1 + p_2 - p_3 - ...-p_n) \\ \times \prod_{j=3}^N 2\pi \delta(p_j^2 - m_j^2c^2)\theta(p^0_j) \frac{d^4p_j}{(2\pi)^4}
 \end{aligned}
 $$
 
@@ -67,7 +67,7 @@ $$
 En donde se utilizo la propiedad de las deltas Dirac $\delta(x^2 - a^2) = \frac{1}{|a|}(\delta(x-a) + \delta(x+a))$. El segundo sumando se puede ignorar debido a que se anula durante la integración ya que la función de Heaviside $\theta(p_j^0)$ evita que $p^0_3$ y $p^0_4$ tomen valores negativos. Reemplazando e integrando ambos factores sobre $dp^0_3$ y $dp_4^0$ obtenemos.
 
 $$ 
-\sigma = \frac{\hbar c S (2\pi)^4}{4(E_1 + E_2) |\vec{p}_i|} \int |\mathcal{M}|^2 \frac{\delta(\frac{E_1 +E_2}{c} - \sqrt{|\vec{p}_3|^2 + m_3^2c^2} - \sqrt{|\vec{p}_4|^2 + m_4^2c^2})}{4 \sqrt{|\vec{p}_3|^2 + m_3^2c^2}\sqrt{|\vec{p}_4|^2 + m_4^2c^2}} \delta^3(\vec{p}_3 + \vec{p}_4) \frac{d^3\vec{p}_3}{(2\pi)^3} \frac{d^3\vec{p}_4}{(2\pi)^3} 
+\sigma = \frac{\hbar^2 c S (2\pi)^4}{4(E_1 + E_2) |\vec{p}_i|} \int |\mathcal{M}|^2 \frac{\delta(\frac{E_1 +E_2}{c} - \sqrt{|\vec{p}_3|^2 + m_3^2c^2} - \sqrt{|\vec{p}_4|^2 + m_4^2c^2})}{4 \sqrt{|\vec{p}_3|^2 + m_3^2c^2}\sqrt{|\vec{p}_4|^2 + m_4^2c^2}} \delta^3(\vec{p}_3 + \vec{p}_4) \frac{d^3\vec{p}_3}{(2\pi)^3} \frac{d^3\vec{p}_4}{(2\pi)^3} 
 $$
 
 Definiendo $\vec{p}_3 = \vec{p}_f$, integrando sobre $d^3\vec{p}_4$, los momentos de la partícula $4$ resultan $\vec{p}_4 = -\vec{p}_f$ debido a la delta Dirac $\delta^3(\vec{p}_3 + \vec{p}_4)$. Tomando $u = \sqrt{|\vec{p}_f|^2 + m_3^2c^2} - \sqrt{|\vec{p}_f|^2 + m_4^2c^2}$  la integral queda como:

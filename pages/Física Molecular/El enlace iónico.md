@@ -12,7 +12,9 @@ Los compuestos iónicos forman estructuras cristalinas, con propiedades como ele
 
 Una expresión fenomenológica para la energía potencial en un enlace iónico, en función de la separación $R$ entre núcleos, es la siguiente:
 
-$$V(R) = -\frac{e^2}{4\pi\epsilon_0R} + \frac{b}{R^9}$$
+$$
+V(R) = -\frac{e^2}{4\pi\epsilon_0R} + \frac{b}{R^9}
+$$
 
 Siendo $b$ un parámetro característico de cada molécula. Interpretemos físicamente que representa cada término en este potencial fenomenológico. 
 
@@ -22,19 +24,30 @@ Notemos el potencial esta compuesto por dos términos. Un termino atractivo, el 
 
 Analicemos mas a fondo este ultimo termino. Para ello, hallemos la tasa de crecimiento del potencial en función de la separación inter-nuclear:
 
-$$ V'(R) = \frac{e^2}{4\pi\epsilon_0R^2} - \frac{9b}{R^{10}} $$
+$$ 
+V'(R) = \frac{e^2}{4\pi\epsilon_0R^2} - \frac{9b}{R^{10}} 
+$$
+
 Para la separación de equilibrio $R_0$, la tasa de crecimiento del potencial será nula, teniendo en cuenta esto, podemos hallar una expresión para el termino repulsivo en función de $R_0$:
 
-$$ V'(R_0) = 0 \Rightarrow \frac{1}{9}\frac{e^2}{4\pi\epsilon_0R_0} = \frac{b}{R_0^{9}}$$
+$$ 
+V'(R_0) = 0 \Rightarrow \frac{1}{9}\frac{e^2}{4\pi\epsilon_0R_0} = \frac{b}{R_0^{9}}
+$$
 
 Luego, podemos escribir el potencial, de una forma simplificada, en función de la posición de equilibrio:
-$$ V(R) = -\frac{e^2}{4\pi\epsilon_0R} + \frac{b}{R_0^9} \frac{R_0^9}{R^9} = -\frac{e^2}{4\pi\epsilon_0R} + \frac{1}{9}\frac{e^2}{4\pi\epsilon_0R_0} \frac{R_0^9}{R^9} = -\frac{e^2}{4\pi\epsilon_0R}(1-\frac{R_0^8}{9R^8})$$
+
+$$ 
+V(R) = -\frac{e^2}{4\pi\epsilon_0R} + \frac{b}{R_0^9} \frac{R_0^9}{R^9} = -\frac{e^2}{4\pi\epsilon_0R} + \frac{1}{9}\frac{e^2}{4\pi\epsilon_0R_0} \frac{R_0^9}{R^9} = -\frac{e^2}{4\pi\epsilon_0R}(1-\frac{R_0^8}{9R^8})
+$$
 
 En la expresión hallada, puede verse que, el potencial repulsivo se vuelve despreciable para separaciones mayores a la de equilibrio, sin embargo este es el potencial dominante para separaciones menores, y es el responsable de que el potencial diverja positivamente en el origen evitando que los iones se acerquen indefinidamente.  
 
 Supongamos ahora, que este potencial, describe el potencial del enlace de la molécula de $\text{NaCl}$, y encontremos de esta forma, la energía necesaria para separarla en los iones $\text{Na}^+$ y $\text{Cl}^-$ será:
 
-$$ E = V(\infty) - V(R_0)= \frac{e^2}{4\pi\epsilon_0R_0}(1-\frac{R_0^8}{9R_0^8}) = \frac{8}{9}\frac{ke^2}{R_0}$$
+$$ 
+E = V(\infty) - V(R_0)= \frac{e^2}{4\pi\epsilon_0R_0}(1-\frac{R_0^8}{9R_0^8}) = \frac{8}{9}\frac{ke^2}{R_0}
+$$
+
 Reemplazando:
 - $e = -1.602176634 \times 10^{-19} \text{C}$
 - $R_0 = 2.51 \text{Å} = 2.51 × 10^{-10} \text{m}$
@@ -64,7 +77,10 @@ Finalmente la energía de disociación del $\text{NaCl}$ será de $E = 3.68\text
 ### Ejemplo
 
 Una expresión fenomenológica para la energía potencial de un molécula de haluro alcalino tiene la siguiente forma:
-$$ V(R) = \alpha \exp(-aR) - \frac{e^2}{4\pi \epsilon_0 R}$$
+
+$$ 
+V(R) = \alpha \exp(-aR) - \frac{e^2}{4\pi \epsilon_0 R}
+$$
 
 Datos espectrales proveen valores de la separación de equilibrio $R_0 = 1.56 \text{Å}$ y de la curvatura de la energía potencial $K = \frac{d^2V}{dR^2}|_{R=R_0} = 248 \text{J/m}^2$, para la molécula $\text{LiF}$.  Por otra parte es sabido que la energía de ionización del $\text{Li}$ es $5.4 \text{eV}$ y la afinidad electrónica del $\text{F}$ es $3.4 \text{eV}$.
 
@@ -72,17 +88,34 @@ Hallemos la energía para separar la molécula $\text{LiF}$ en los iones $\text{
 
 La energía necesaria para separar la molécula será:
 
-$$ E = V(\infty) - V(R_0) = - \alpha \exp(-aR_0) + \frac{e^2}{4\pi \epsilon_0 R_0}$$
+$$ 
+E = V(\infty) - V(R_0) = - \alpha \exp(-aR_0) + \frac{e^2}{4\pi \epsilon_0 R_0}
+$$
+
 Debemos expresar $E$ en términos de la separación de equilibrio $R_0$ y la curvatura de la energía potencial $K$. Para ello derivamos la expresión del potencial:
 
-$$ V'(R) = -\alpha a \exp(-aR) + \frac{e^2}{4\pi\epsilon_0R^2} \qquad V''(R) = \alpha a^2 \exp(-aR) - \frac{e^2}{2\pi\epsilon_0 R^3} $$
+$$ 
+V'(R) = -\alpha a \exp(-aR) + \frac{e^2}{4\pi\epsilon_0R^2} \qquad V''(R) = \alpha a^2 \exp(-aR) - \frac{e^2}{2\pi\epsilon_0 R^3} 
+$$
+
 Para la separación de equilibrio $R_0$ se verifica que:
-$$ V'(R_0) = 0 \Rightarrow \alpha a \exp(-aR_0) = \frac{e^2}{4\pi\epsilon_0R_0^2} $$
+
+$$ 
+V'(R_0) = 0 \Rightarrow \alpha a \exp(-aR_0) = \frac{e^2}{4\pi\epsilon_0R_0^2} 
+$$
+
 Si bien no existe una expresión cerrada de la separación de equilibrio $R_0$, podemos usar esta expresión para escribir la expresión de la curvatura $K$ como:
 
-$$ K = V''(R_0) = a \frac{e^2}{4\pi\epsilon_0 R_0^2} - \frac{e^2}{2\pi\epsilon_0R_0^3} = \frac{e^2}{4\pi\epsilon_0R_0^3}(aR_0 -2)$$
+$$ 
+K = V''(R_0) = a \frac{e^2}{4\pi\epsilon_0 R_0^2} - \frac{e^2}{2\pi\epsilon_0R_0^3} = \frac{e^2}{4\pi\epsilon_0R_0^3}(aR_0 -2)
+$$
+
 Luego el parámetro $a$ en términos de $K$ y $R_0$ será:
-$$ \Rightarrow a = \frac{1}{R_0} \left(\frac{R_0^3}{ke^2}K + 2 \right)$$
+
+$$ 
+\Rightarrow a = \frac{1}{R_0} \left(\frac{R_0^3}{ke^2}K + 2 \right)
+$$
+
 Reemplazando en la energía $E$:
 
 $$ E = - \frac{1}{a} \frac{e^2}{4\pi\epsilon_0R_0^2} + \frac{e^2}{4\pi\epsilon_0R_0} =  \frac{ke^2}{R_0^2} (1 - \frac{1}{aR_0}) $$
@@ -96,11 +129,17 @@ Reemplazando:
 
 Finalmente podemos analizar el proceso de disociación del $\text{Li}^+\text{F}^-$ y $\text{Li}$ y $\text{F}$. 
  
-$$ \text{Li}^+\text{F}^- \rightarrow \text{Li}^+ + \text{F}^-  \qquad  E = 6.7 \text{eV} $$
+$$ 
+\text{Li}^+\text{F}^- \rightarrow \text{Li}^+ + \text{F}^-  \qquad  E = 6.7 \text{eV} 
+$$
 
-$$ F^- \rightarrow F + \text{}e^- \qquad \Delta E = 3.4\text{eV}$$
+$$ 
+F^- \rightarrow F + \text{}e^- \qquad \Delta E = 3.4\text{eV}
+$$
 
-$$ \text{Li}^+ + e^- \rightarrow \text{Li} \qquad \Delta E = -5,4\text{eV} $$
+$$ 
+\text{Li}^+ + e^- \rightarrow \text{Li} \qquad \Delta E = -5,4\text{eV} 
+$$
 
 $$ 
 \Rightarrow \text{Li}^+\text{F}^- \rightarrow \text{Li} + \text{F} \qquad E = 6.7 \text{eV} + 3.4 \text{eV}  - 5.4\text{eV} = 4.7 \text{eV}

@@ -149,34 +149,108 @@ Obtenemos finalmente que $a = 2.49 \text{Å}^{-1}$.
 
 ## Reglas de transición
 
+
+
+## Espectroscopía  
+
+La **espectroscopía rotacional** y la **espectroscopía roto-vibracional** son técnicas que analizan la interacción de la radiación electromagnética con moléculas en fase gaseosa, permitiendo estudiar sus propiedades estructurales y energéticas.  
+
+### Espectroscopía rotacional  
+
+La espectroscopía rotacional estudia la absorción o emisión de radiación electromagnética en la región del **microondas** (aproximadamente 0.1-10 mm, o entre 300 y 3 cm⁻¹ en número de onda). Se centra en las transiciones entre niveles de **energía rotacional**, proporcionando información sobre la estructura molecular y los momentos de inercia de las moléculas.  
+
+#### Procedimiento:  
+- Se obtiene una muestra gaseosa de la molécula de interés.  
+- La muestra se introduce en una celda o cavidad resonante adecuada para la región de microondas.  
+- Se irradia la muestra con una fuente de radiación de microondas.  
+- Las moléculas absorben la radiación cuando la frecuencia de la onda coincide con la diferencia entre dos niveles rotacionales permitidos.  
+- Esta absorción genera un **espectro rotacional** característico de la molécula.  
+- Un **espectrómetro de microondas** dispersa y analiza la radiación transmitida o absorbida.  
+- Un detector de microondas (como un diodo de Schottky o un detector de heterodino) mide la intensidad de la señal.  
+- Se obtiene un gráfico de **intensidad** vs. **frecuencia o número de onda (cm⁻¹)**, donde se observan picos correspondientes a las transiciones rotacionales.  
+
+### Espectroscopía roto-vibracional  
+
+La espectroscopía roto-vibracional estudia la absorción o emisión de radiación electromagnética en la región del **infrarrojo medio** (aproximadamente entre $400$ y $4000$ $\text{cm}^{-1}$ en número de onda). Este fenómeno ocurre cuando las moléculas experimentan transiciones simultáneas en sus estados de **vibración** y **rotación**.  
+
+#### Procedimiento:  
+- Se obtiene una muestra gaseosa de la molécula de interés.  
+- La muestra se introduce en una celda transparente al infrarrojo.  
+- Se irradia la muestra con una fuente de luz infrarroja o un láser de infrarrojo.  
+- Las moléculas absorben la radiación, promoviendo transiciones roto-vibracionales.  
+- El cambio en los estados energéticos de las moléculas genera un **espectro característico**.  
+- La radiación transmitida se analiza mediante un **espectrómetro de transformada de Fourier (FTIR)** o un **monocromador de rejilla**.  
+- Un detector infrarrojo (como un bolómetro o un detector de semiconductor) mide la intensidad de la luz absorbida.  
+- Se obtiene un gráfico de **intensidad** vs. **número de onda (cm⁻¹)**, donde aparecen las líneas de absorción correspondientes a las transiciones roto-vibracionales.  
+
 ### Ejemplo
+
+#### Espectroscopia rotacional del $\text{HCl}$.
 
 La siguiente figura muestra un espectro de absorción de la molécula de $\text{HCl}$ en fase gaseosa, en función del numero de onda $\bar{\nu} = \frac{1}{\lambda}$, siendo $\lambda$ la longitud de onda de la radiación electromagnética en $\text{cm}$. 
 
-![Espectro del HCl](../assets/20250222162931.png)
+![Espectro del HCl](../assets/20250304180344.png)
 
 Consideremos que esta molécula está formada por los isótopos $^1\text{H}$ y $^{35}\text{Cl}$ con masas atómicas $1.007825\text{u}$ y $34.968853\text{u}$ respectivamente.
 
-Expliquemos el origen de estas líneas de absorción y la forma espectral de estas. 
+Expliquemos el origen de estas líneas de absorción y la forma espectral de estas.
 
+Notemos que las líneas de absorción se encuentran en el rango de microondas del espectro. Este corresponde a un experimento de espectroscopia rotacional y mide los niveles absorbidos en transiciones rotacionales puras. 
+
+La primera línea del espectro se encuentran en el numero de onda $20\text{cm}^{-1}$, y pueden observarse 14 líneas, estando la ultima en aproximadamente en el numero de onda $285 \text{cm}^{-1}$.  Esto nos dice que la separación entre líneas será de aproximadamente $20\text{cm}^{-1} + \alpha$, en donde:
+
+$$  
+20\text{cm}^{-1} + 13(20\text{cm}^{-1} + \alpha) = 285\text{cm}^{-1} \Rightarrow 
+\alpha = \frac{285\text{cm}^{-1} - 20\text{cm}^{-1}}{13} - 20\text{cm}^{-1} \approx 0.384 \text{cm}^{-1} 
+$$
+
+Luego, la separación entre líneas del espectro será de $\Delta \bar{\nu} \approx 20.384 \text{cm}^{-1}$. Analicemos ahora las transiciones. Podemos aproximar las auto-energías de la molécula como:
+
+$$ 
+E_{rot}^l \approx \frac{\hbar^2l(l+1)}{2\mu R_0^2} \qquad l=0,1,2,...
+$$
+
+Con $\mu$ la masa reducida del $\text{HCl}$ y $R_0$ al distancia inter-nuclear de equilibrio. En el espectro observado, cada línea corresponde, no a un nivel de energía, sino a una transición de energía con la regla de selección $\Delta l = 1$. La posición de una línea en la posición $l$ corresponde a una absorción de energía $\Delta E_{rot}^l$ por parte del gas. Luego estas líneas estarán en las posiciones:
+
+$$ 
+\Delta E^l_{rot} = E^{l+1}_{rot} - E^l_{rot}= \frac{\hbar^2}{2\mu R_0^2} \left[(l+1)(l+2) - l(l+1) \right] = \frac{\hbar^2}{\mu R_0^2}(l+1) \qquad l=0,1,2,...
+$$
+
+La separación entre dos líneas de absorción será entonces:
+
+$$
+\Delta E_{rot}^{l+1} - \Delta E_{rot}^{l} = \frac{\hbar^2}{\mu R_0^2} = hc\Delta\bar{\nu} = 2 \pi \hbar c\Delta\bar{\nu}
+$$
+
+Hallamos la separación inter-nuclear $R_0$ como:
+
+$$ 
+R_0 = \sqrt{\frac{\hbar}{2\pi\mu c\Delta\bar{\nu}}} \qquad \mu = \frac{1}{\frac{1}{m_\text{H}} + \frac{1}{m_{\text{Cl}}}} = 0.973 \text{u}
+$$
+
+Luego, la distancia inter-nuclear de equilibrio de la molécula de $\text{HCl}$ será $R_0 = 1.3 \text{Å}$ según los datos.  
 
 ### Ejemplo
 
 La figura muestra un espectro de absorción de la molécula de bromuro de hidrógeno $\text{HBr}$ en fase gaseosa, en función del número de onda $\bar{\nu} = \frac{1}{\lambda}$, siendo $\lambda$ la longitud de onda de la radiación electromagnética expresada en $\text{cm}$.
 
-  ![Espectroscopia rotovibracional](../assets/20250222181019.png)
+  ![Espectroscopia rotovibracional](../assets/20250304180833.png)
 
-Las masas atómicas de los elementos bromo e hidrógeno son $m_{\text{Br}} = 79.909 \, \text{u}$ y $m_{\text{H}} = 1.00784 \, \text{u}$, respectivamente. A continuación:
+Las masas atómicas de los elementos bromo e hidrógeno son $m_{\text{Br}} = 79.909 \, \text{u}$ y $m_{\text{H}} = 1.00784 \, \text{u}$, respectivamente.
 
 - Explicaremos la forma espectral medida en relación a la posición de las líneas de absorción observadas. Realizar un diagrama indicando las transiciones entre los niveles de energía correspondientes para las líneas espectrales comprendidas entre $2510\text{cm}^{-1}$ y $2610\text{cm}^{-1}$.
 - Estimaremos la separación inter-nuclear de la molécula $\text{HBr}$ en su estado fundamental.
 - Estimaremos la energía de punto cero de la molécula $\text{HBr}$.
 
+$$
+E^{v,l} = V(R_0 ) + \hbar \omega(v + \frac{1}{2}) + \frac{\hbar^2l(l+1)}{2\mu R_0^2} \quad v=0,1,2 ... \quad l = 0,1,2 ...
+$$
 
 
-### Ejemplo
+$$ 
+\Delta E_R^{v, l} = E^{v+1, l+1} - E^{v,l} = \hbar\omega + \frac{\hbar^2}{\mu R_0^2}(l+1) \qquad l=0, 1, ...
+$$
 
-
-![Espectro roto-vibracional](../assets/20250222180817.png)
-
-
+$$ 
+\Delta E^{v, l}_P = E^{v+1, l-1} - E^{v,l} = \hbar \omega - \frac{\hbar^2}{\mu R_0^2} l \qquad l= 1, 2, 3, ...
+$$

@@ -1,4 +1,3 @@
-
 Consideremos el proceso de aniquilación de pares: $e^+ + e^- \rightarrow \gamma + \gamma$  con el marco de referencia en el centro de masa. Proponemos los $4$-momentos el par $e^+$ y $e^-$.
 
 $$
@@ -15,8 +14,8 @@ Reemplazando en la sección transversal $\sigma$:
 
 $$
 \begin{aligned}
-\sigma = \frac{c \hbar S}{(E_1+E_2)|\vec{p}|} \int (2\pi)^4|\mathcal{M}|^2 \delta^4(p_1+p_2-p_3-p_4) \delta^3(\vec{p}_3+\vec{p}_4) \\
-\times 2\pi \delta(p_3^2)\theta(p^0_3) 2\pi \delta(p_4^2)\theta(p^0_4) \frac{d^4p_3}{(2\pi)^2} \frac{d^4p_4}{(2\pi)^2}
+\sigma = \frac{c \hbar^2 S}{4(E_1+E_2)|\vec{p}|} \int (2\pi)^4|\mathcal{M}|^2 \delta^4(p_1+p_2-p_3-p_4) \delta^3(\vec{p}_3+\vec{p}_4) \\
+\times 2\pi \delta(p_3^2)\theta(p^0_3) 2\pi \delta(p_4^2)\theta(p^0_4) \frac{d^4p_3}{(2\pi)^4} \frac{d^4p_4}{(2\pi)^4}
 \end{aligned}
 $$
 
@@ -34,35 +33,16 @@ $$
 Integrando sobre $\vec{p}_4$ se obtiene que $|\vec{p}_4| = |\vec{p}_3| \equiv E_f/c$. Derivando sobre el ángulo solido $\Omega$, nos queda una integral en términos de $|\vec{p}_3|^2d|\vec{p}_3| = E_f^2 dE_f/c^3$. Reemplazando:
 
 $$ 
-\frac{d\sigma}{d\Omega} = \left(\frac{\hbar c}{8\pi}\right)^2 \frac{S |\mathcal{M}|^2}{(E_1 + E_2)c |\vec{p}|} \int\frac{c\delta(E_1+E_2-2E_f)}{E_f^2/c^2} \frac{E_f^2}{c^3}dE_f
+\frac{d\sigma}{d\Omega} = \left(\frac{\hbar c}{8\pi}\right)^2 \frac{S |\mathcal{M}|^2}{(E_1 + E_2)c |\vec{p}|} \int\frac{c\delta(\frac{E_1+E_2}{2}-E_f)/2}{E_f^2/c^2} E_f^2dE_f/c^3
 $$
 
-Finalmente, como en los productos se repite el fotón dos veces, $S = 1/2$, entonces:
+Finalmente, como en los productos se repite el fotón dos veces, $S = 1/2$, entonces, la sección eficaz diferencial será:
 
 $$ 
-\frac{d\sigma}{d\Omega} = \left(\frac{\hbar c}{8\pi}\right)^2 \frac{|\mathcal{M}|^2}{2(E_1 + E_2)c |\vec{p}|} 
+\frac{d\sigma}{d\Omega} = \left(\frac{\hbar c}{16\pi}\right)^2 \frac{|\mathcal{M}|^2}{(E_1 + E_2)c |\vec{p}|} 
 $$
 
-Nos queda hallar la amplitud $\mathcal{M}$. Notemos que hay dos diagramas de Feynman posibles para este proceso. 
+Nos queda hallar la amplitud $\mathcal{M}$. Notemos que hay dos diagramas de Feynman posibles para este proceso. Esto se debe a que los fotones emitidos son indistinguibles. 
 
-![[20250224183436.png]]
-
-Para el primer diagrama, podemos construir $\mathcal{M}_1$ como:
-$$ 
-\mathcal{M}_1 \sim \left[ \bar{v}_2(ig_e\gamma^{\mu}\epsilon_{4\mu}^*)(\frac{\cancel q +mc}{q^2-m_e^2c^2})(ig_e\gamma^{\nu} \epsilon^*_{3\nu}u_1)\right] \delta(p_1-q-p_3)
-$$
-
-$$ 
-\mathcal{M}_1 = \frac{-g_e^2}{(p_1 - p_3)^2-m_e^2c^2}(\bar{v}_2 \cancel{\epsilon_4^*})(\cancel{p_1} - \cancel{p_3} + m_ec)(\cancel{\epsilon_3^*}u_1)
-$$
-
-Análogamente para el segundo diagrama:
-$$ 
-\mathcal{M}_2 = \frac{-g_e^2}{(p_1 - p_4)^2-m_e^2}(\bar{v}_2 \cancel{\epsilon_3^*})(\cancel{p_1} - \cancel{p_4} - mc)(\cancel{\epsilon_4^*}u_1)
-$$
-
-Luego la amplitud será:
-$$
-\mathcal{M}^2 = \mathcal{M}_1^2 + \mathcal{M}_2^2 + \mathcal{M}^*_1\mathcal{M}_2 +\mathcal{M}_1\mathcal{M}_2^* 
-$$
+![[20250226005328.png]]
 
