@@ -789,8 +789,10 @@
 
 <p>Las interacciones de Van Der Waals describen las fuerzas intermoleculares que surgen entre átomos y moléculas neutras. Estas fuerzas, aunque más débiles que los enlaces químicos covalentes o iónicos, desempeñan un papel fundamental en la estructura y comportamiento de sistemas físicos y biológicos. Dentro de estas interacciones se incluyen las fuerzas de dispersión de London, las fuerzas dipolo-dipolo y las fuerzas dipolo inducido.</p>
 <p>Una forma común de modelar las interacciones de Van Der Waals entre dos átomos o moléculas es mediante el potencial de Lennard-Jones, que es un potencial fenomenológico que modela tanto la atracción debida a las fuerzas de dispersión como la repulsión a cortas distancias debido al principio de exclusión de Pauli. Este potencial puede expresarse como: </p>
-<p><span class="arithmatex">\(<span class="arithmatex">\(V(R) = 4\epsilon \left[ \left( \frac{\sigma}{R} \right)^{12} - \left( \frac{\sigma}{R} \right)^{6} \right]\)</span>\)</span> 
-Donde:
+<div class="arithmatex">\[
+V(R) = 4\epsilon \left[ \left( \frac{\sigma}{R} \right)^{12} - \left( \frac{\sigma}{R} \right)^{6} \right]
+\]</div>
+<p>Donde:
 * Es la distancia entre los dos átomos o moléculas,
 * Es el parámetro de distancia a la cual el potencial es cero,
 * Representa la profundidad del pozo de potencial, es decir, la energía de interacción mínima.   </p>
@@ -840,7 +842,9 @@ V(R) \approx -\epsilon + 36 \frac{\epsilon}{R_0^2}\left(R - R_0 \right)^2
 E_{n} = \hbar \omega \left(n + \frac{1}{2} \right) - \epsilon \qquad n = 0, 1, 2,...
 \]</div>
 <p>La energía de punto cero, es decir, la mínima energía posible de este sistema, será entonces <span class="arithmatex">\(E_0 = \frac{\hbar \omega}{2}\)</span>, la cual podemos hallar reemplazando:</p>
-<div class="arithmatex">\[ E_0 = \frac{\hbar}{2} \sqrt{\frac{72\epsilon}{R_0^2}\frac{2}{m}} - \epsilon =  \frac{6\hbar}{R_0} \sqrt{\frac{\epsilon}{m}} - \epsilon = \frac{6\hbar}{2^{1/6}\sigma}\sqrt{\frac{\epsilon}{m}} - \epsilon\]</div>
+<div class="arithmatex">\[ 
+E_0 = \frac{\hbar}{2} \sqrt{\frac{72\epsilon}{R_0^2}\frac{2}{m}} - \epsilon =  \frac{6\hbar}{R_0} \sqrt{\frac{\epsilon}{m}} - \epsilon = \frac{6\hbar}{2^{1/6}\sigma}\sqrt{\frac{\epsilon}{m}} - \epsilon
+\]</div>
 <p>Finalmente, para que estas moléculas existan y sean estables a temperatura ambiente, su energía de punto cero debería ser mayor a la energía térmica <span class="arithmatex">\(k_b T\)</span>, de otra forma, su enlace se rompería. Reemplazando:</p>
 <ul>
 <li><span class="arithmatex">\(\hbar = 4.135 \times 10^{-15} \text{eV}\cdot \text{s}\)</span></li>

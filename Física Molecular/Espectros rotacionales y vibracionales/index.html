@@ -1071,28 +1071,34 @@
 </ul>
 <p>Para un sistema de muchas moléculas se puede estudiar el primer grupo bajo el marco de la mecánica estadística. Por el momento nos interesa el segundo grupo.</p>
 <p>Escribamos el hamiltoniano de una molécula con respecto a su centro de masa en coordenadas esféricas en términos del operador momento angular <span class="arithmatex">\(\vec{L}\)</span>.</p>
-<p>
-<script type="math/tex; mode=display">
+<div class="arithmatex">\[
 \hat{H} = -\frac{\hbar^2}{2\mu}\left(\frac{1}{R^2} \frac{\partial}{\partial R}(R^2\frac{\partial}{\partial R}) - \frac{1}{R^2}\frac{\hat{L}^2}{\hbar^2} \right) + \hat{V}
-</script>
-Con <span class="arithmatex">\(\hat{V}\)</span> un potencial, el cual por simplicidad suponemos que solo depende de <span class="arithmatex">\(R\)</span>. Luego los autoestados de dicho hamiltoniano <span class="arithmatex">\(\ket{\psi}\)</span> pueden escribirse en términos de una parte radial y los autoestados del operador <span class="arithmatex">\(\hat{L}^2\)</span>, es decir los armónicos esféricos. Esto nos indica que una molécula puede tanto vibrar como rotar.  </p>
+\]</div>
+<p>Con <span class="arithmatex">\(\hat{V}\)</span> un potencial, el cual por simplicidad suponemos que solo depende de <span class="arithmatex">\(R\)</span>. Luego los autoestados de dicho hamiltoniano <span class="arithmatex">\(\ket{\psi}\)</span> pueden escribirse en términos de una parte radial y los autoestados del operador <span class="arithmatex">\(\hat{L}^2\)</span>, es decir los armónicos esféricos. Esto nos indica que una molécula puede tanto vibrar como rotar.  </p>
 <p>Para moléculas estables, sabemos que una separación inter-nuclear de equilibrio existe, supongamos por el momento las vibraciones pueden considerarse oscilaciones pequeñas al rededor de esta, es decir <span class="arithmatex">\(R \approx R_0\)</span>. Bajo esta aproximación podemos desacoplar el movimiento vibracional del movimiento de rotacional de la molécula, es decir considerarlos independientes. Escribimos los hamiltonianos para cada uno:</p>
-<p>
-<script type="math/tex; mode=display"> \hat{H}_{rot} \approx \frac{\hat{L}^2}{2\mu R_0^2} \qquad
+<div class="arithmatex">\[ \hat{H}_{rot} \approx \frac{\hat{L}^2}{2\mu R_0^2} \qquad
 \hat{H}_{vib} \approx   -\frac{\hbar^2}{2\mu} \frac{1}{R^2} \frac{\partial}{\partial R}(R^2\frac{\partial}{\partial R}) + \hat{V}
-</script>
-Con <span class="arithmatex">\(R\)</span> el modulo de <span class="arithmatex">\(\vec{R}\)</span>. Luego el hamiltoniano de una molécula simplemente será <span class="arithmatex">\(\hat{H} = \hat{H}_{rot} + \hat{H}_{vib}\)</span>. Notemos que el hamiltoniano de rotación tendrá autoestados de la forma <span class="arithmatex">\(\ket{\psi} \sim \ket{l, m}\)</span> con auto-energías:</p>
-<div class="arithmatex">\[E^l_{rot} = \frac{\hbar^2l(l+1)}{2\mu R_0^2} \quad l = 0, 1, 2, ...\]</div>
+\]</div>
+<p>Con <span class="arithmatex">\(R\)</span> el modulo de <span class="arithmatex">\(\vec{R}\)</span>. Luego el hamiltoniano de una molécula simplemente será <span class="arithmatex">\(\hat{H} = \hat{H}_{rot} + \hat{H}_{vib}\)</span>. Notemos que el hamiltoniano de rotación tendrá autoestados de la forma <span class="arithmatex">\(\ket{\psi} \sim \ket{l, m}\)</span> con auto-energías:</p>
+<div class="arithmatex">\[
+E^l_{rot} = \frac{\hbar^2l(l+1)}{2\mu R_0^2} \quad l = 0, 1, 2, ...
+\]</div>
 <p>Para el caso vibracional, se puede reducir la dimensión de la ecuación de Schrödinger  tomando ecuaciones de onda de la forma <span class="arithmatex">\(\frac{U(R)}{R}\)</span>, es decir:</p>
 <div class="arithmatex">\[
 \psi(\vec{R}) \sim \frac{U(R)}{R} \Rightarrow \hat{H}_{vib} \psi(\vec{R})  = -\frac{\hbar^2}{2\mu}\frac{\partial^2}{\partial^2R}\psi(\vec{R})  + V(R)
 \]</div>
 <p>Si desarrollamos <span class="arithmatex">\(V(R)\)</span> hasta segundo orden, al rededor de la posición de equilibrio <span class="arithmatex">\(R_0\)</span>:</p>
-<div class="arithmatex">\[ V(R) \approx V(R_0) + \frac{1}{2}V''(R_0)(R-R_0)^2\]</div>
+<div class="arithmatex">\[ 
+V(R) \approx V(R_0) + \frac{1}{2}V''(R_0)(R-R_0)^2
+\]</div>
 <p>El hamiltoniano <span class="arithmatex">\(\hat{H}_v\)</span> se transforma en el hamiltoniano del oscilador armónico desplazado. Teniendo en cuenta que la energía cinética es invariante ante translaciones, hacemos el reemplazo de variables <span class="arithmatex">\(R - R_0 \equiv r\)</span> y escribimos:</p>
-<div class="arithmatex">\[ \hat{H}_{vib} \psi(\vec{r}) \approx -\frac{\hbar^2}{2\mu} \frac{\partial}{\partial r^2} \psi(\vec{r}) + \frac{1}{2}kr^2\psi(\vec{r}) = (E_{vib} - V(R_0))\psi(\vec{r})\]</div>
+<div class="arithmatex">\[ 
+\hat{H}_{vib} \psi(\vec{r}) \approx -\frac{\hbar^2}{2\mu} \frac{\partial}{\partial r^2} \psi(\vec{r}) + \frac{1}{2}kr^2\psi(\vec{r}) = (E_{vib} - V(R_0))\psi(\vec{r})
+\]</div>
 <p>Las auto-energías de esta ecuación son las del oscilador armónico, las cuales son bien conocidas y las podemos escribir como:</p>
-<div class="arithmatex">\[ E_{vib}^v =V(R_0)+ \hbar\omega(v + \frac{1}{2}) \qquad v = 0, 1, 2, ...\]</div>
+<div class="arithmatex">\[ 
+E_{vib}^v =V(R_0)+ \hbar\omega(v + \frac{1}{2}) \qquad v = 0, 1, 2, ...
+\]</div>
 <p>Finalmente la energía de la molécula será simplemente igual a la suma de las energías rotacional y vibracional y podemos describir el espectro de energías roto-vibracional de una molécula como:</p>
 <div class="arithmatex">\[
 E^{v,l} = V(R_0 ) + \hbar \omega(v + \frac{1}{2}) + \frac{\hbar^2l(l+1)}{2\mu R_0^2} \quad v=0,1,2 ... \quad l = 0,1,2 ...
@@ -1102,7 +1108,9 @@ E^{v,l} = V(R_0 ) + \hbar \omega(v + \frac{1}{2}) + \frac{\hbar^2l(l+1)}{2\mu R_
 <h4 id="energia-rotacional-del-textco">Energía rotacional del <span class="arithmatex">\(\text{CO}\)</span></h4>
 <p>Calculemos la energía <strong>rotacional</strong> de los tres primeros niveles rotacionales puros molécula <span class="arithmatex">\(\text{CO}\)</span>. Determinemos también la longitud de onda de los fotones absorbidos en las transiciones entre estos niveles de energía. La longitud de enlace de la molécula es <span class="arithmatex">\(1,13\text{Å}\)</span></p>
 <p>Los niveles de energía rotacionales para el <span class="arithmatex">\(\text{CO}\)</span> serán:</p>
-<div class="arithmatex">\[ E_{rotacional}^l = \frac{\hbar^2l(l+1)}{2\mu R_0^2} \qquad l = 1,2,... \qquad \mu \frac{1}{\frac{1}{m_{\text{C}} } + \frac{1}{m_{\text{O}} }}\]</div>
+<div class="arithmatex">\[ 
+E_{rotacional}^l = \frac{\hbar^2l(l+1)}{2\mu R_0^2} \qquad l = 1,2,... \qquad \mu \frac{1}{\frac{1}{m_{\text{C}} } + \frac{1}{m_{\text{O}} }}
+\]</div>
 <p>Reemplazando para <span class="arithmatex">\(l = 0, 1, 2\)</span>:
 - <span class="arithmatex">\(R_0 = 1,13\text{Å}\)</span>
 - <span class="arithmatex">\(m_H \approx m_p \approx 1,6726 \times 10^{−27} \text{kg}\)</span>
@@ -1122,10 +1130,13 @@ E^{v,l} = V(R_0 ) + \hbar \omega(v + \frac{1}{2}) + \frac{\hbar^2l(l+1)}{2\mu R_
 <p>Cuando hablamos de separación entre líneas en un espectro rotacional, nos referimos en realidad a los valores de energía para los cuales hubo una transición de energía, es decir, la molécula absorbió una cantidad <span class="arithmatex">\(\Delta E\)</span> de energía y paso a un estado rotacional con un numero cuántico <span class="arithmatex">\(l\)</span> mayor al que tenia. Estos son los niveles de energía que serán medidos y la separación entre estos puede expresarse como:</p>
 <div class="arithmatex">\[ \Delta E^l = E^{l+1} - E^{l} = \frac{\hbar^2}{2\mu R_0^2}[(l+1)(l+2) -l(l+1)] = \frac{\hbar^2}{\mu R_0^2}(l+1)\]</div>
 <p>Puede verse que la separación entre dos de estas líneas será constante igual a:</p>
-<p>
-<script type="math/tex; mode=display"> h \nu = \frac{\hbar^2}{\mu R_0^2}</script>
-Luego la separación inter-nuclear de la molécula puede expresarse simplemente como:  </p>
-<div class="arithmatex">\[ R_0 = \sqrt{\frac{\hbar}{2\pi\mu\nu}} \qquad \mu = \frac{1}{\frac{1}{m_{\text{H}} } + \frac{1}{m_{\text{Cl}} }} \approx m_H\]</div>
+<div class="arithmatex">\[ 
+h \nu = \frac{\hbar^2}{\mu R_0^2}
+\]</div>
+<p>Luego la separación inter-nuclear de la molécula puede expresarse simplemente como:  </p>
+<div class="arithmatex">\[ 
+R_0 = \sqrt{\frac{\hbar}{2\pi\mu\nu}} \qquad \mu = \frac{1}{\frac{1}{m_{\text{H}} } + \frac{1}{m_{\text{Cl}} }} \approx m_H
+\]</div>
 <p>Finalmente reemplazando:
 - <span class="arithmatex">\(\nu = 6,35×10^{11} \text{s}^{-1}\)</span>
 - <span class="arithmatex">\(m_H \approx 1.00784 \times 931.5 \text{MeV}/c^2\)</span> 
@@ -1133,7 +1144,9 @@ Luego la separación inter-nuclear de la molécula puede expresarse simplemente 
 <p>Obtenemos que la separación inter-nuclear de equilibrio será de <span class="arithmatex">\(R_0 \approx 1.27 \text{Å}\)</span>.</p>
 <h4 id="potencial-de-morse">Potencial de Morse</h4>
 <p>Para muchas moléculas ligadas covalentemente, la energía potencial se puede describir adecuadamente por medio del potencial de Morse:</p>
-<div class="arithmatex">\[ V(R) = A \left( e^{-2a(R-R_0)} - 2e^{-a(R-R_0)} \right) \]</div>
+<div class="arithmatex">\[ 
+V(R) = A \left( e^{-2a(R-R_0)} - 2e^{-a(R-R_0)} \right) 
+\]</div>
 <p>Donde <span class="arithmatex">\(A\)</span>, <span class="arithmatex">\(a\)</span> y <span class="arithmatex">\(R_0\)</span> son parámetros característicos de cada molécula. La separación inter-nuclear de la molécula <span class="arithmatex">\(\text{CO}\)</span> es <span class="arithmatex">\(0.113 \text{nm}\)</span>, la energía de disociación es de <span class="arithmatex">\(9.60 \text{eV}\)</span>, la frecuencia vibracional es de <span class="arithmatex">\(6.51 \times 10^{13} \text{Hz}\)</span>. A partir de estos datos experimentales, determinar los potenciales de Morse para la interacción entre el carbono y el oxígeno.</p>
 <p>La energía de disociación de una molécula diatómica es la energía necesaria para separar los átomos a una distancia infinita, es decir:</p>
 <div class="arithmatex">\[ 
