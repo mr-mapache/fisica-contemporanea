@@ -2,7 +2,10 @@ Las interacciones de Van Der Waals describen las fuerzas intermoleculares que su
 
 Una forma común de modelar las interacciones de Van Der Waals entre dos átomos o moléculas es mediante el potencial de Lennard-Jones, que es un potencial fenomenológico que modela tanto la atracción debida a las fuerzas de dispersión como la repulsión a cortas distancias debido al principio de exclusión de Pauli. Este potencial puede expresarse como: 
 
-$$V(R) = 4\epsilon \left[ \left( \frac{\sigma}{R} \right)^{12} - \left( \frac{\sigma}{R} \right)^{6} \right]$$ 
+$$
+V(R) = 4\epsilon \left[ \left( \frac{\sigma}{R} \right)^{12} - \left( \frac{\sigma}{R} \right)^{6} \right]
+$$
+
 Donde:
 * Es la distancia entre los dos átomos o moléculas,
 * Es el parámetro de distancia a la cual el potencial es cero,
@@ -77,7 +80,9 @@ $$
 
 La energía de punto cero, es decir, la mínima energía posible de este sistema, será entonces $E_0 = \frac{\hbar \omega}{2}$, la cual podemos hallar reemplazando:
 
-$$ E_0 = \frac{\hbar}{2} \sqrt{\frac{72\epsilon}{R_0^2}\frac{2}{m}} - \epsilon =  \frac{6\hbar}{R_0} \sqrt{\frac{\epsilon}{m}} - \epsilon = \frac{6\hbar}{2^{1/6}\sigma}\sqrt{\frac{\epsilon}{m}} - \epsilon$$
+$$ 
+E_0 = \frac{\hbar}{2} \sqrt{\frac{72\epsilon}{R_0^2}\frac{2}{m}} - \epsilon =  \frac{6\hbar}{R_0} \sqrt{\frac{\epsilon}{m}} - \epsilon = \frac{6\hbar}{2^{1/6}\sigma}\sqrt{\frac{\epsilon}{m}} - \epsilon
+$$
 
 Finalmente, para que estas moléculas existan y sean estables a temperatura ambiente, su energía de punto cero debería ser mayor a la energía térmica $k_b T$, de otra forma, su enlace se rompería. Reemplazando:
 
