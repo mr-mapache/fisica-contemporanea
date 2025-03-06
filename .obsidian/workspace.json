@@ -183,8 +183,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "68fcab1a43c9ece7",
+  "active": "ea595849aaec2d09",
   "lastOpenFiles": [
+    "pages/stylesheets/custom.css",
+    "pages/stylesheets",
     "pages/Física Molecular/Espectros rotacionales y vibracionales.md",
     "pages/index.md",
     "site/search/search_index.json",
@@ -196,7 +198,6 @@
     "site/Física de Partículas/Dispersión de particulas/Aniquilación electrón-positrón/index.html",
     "site/Física de Partículas/Fotones/index.html",
     "site/Física de Partículas/Ecuación de Dirac/index.html",
-    "site/Física de Partículas/Dispersión de particulas/Reglas de Feynman",
     "site/assets/images/favicon.png",
     "site/assets/20250304180833.png",
     "site/assets/20250304180344.png",
@@ -230,7 +231,6 @@
     "Reglas de Feynman.md",
     "docs/Física de Partículas/Ecuación de Dirac.md",
     "docs/Física Nuclear/Estructura nuclear.md",
-    "docs/Física Nuclear/Desintegración beta.md",
     "Sin título.canvas"
   ]
 }
