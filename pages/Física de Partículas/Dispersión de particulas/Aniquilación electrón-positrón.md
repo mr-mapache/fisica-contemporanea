@@ -44,5 +44,5 @@ $$
 
 Nos queda hallar la amplitud $\mathcal{M}$. Notemos que hay dos diagramas de Feynman posibles para este proceso. Esto se debe a que los fotones emitidos son indistinguibles. 
 
-![[20250226005328.png]]
+![Aniquilación electrón positrón](../../assets/20250226005328.png)
 

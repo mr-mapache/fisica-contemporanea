@@ -84,4 +84,4 @@ $$
 
 Nos queda ahora hallar la amplitud de dispersión $\mathcal{M}$. Notemos que para este proceso tenemos dos diagramas de Feynman posibles.
 
-![[20250226010357.png]]
+![Efecto Compton](../../assets/20250226010357.png)
