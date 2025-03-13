@@ -85,3 +85,13 @@ $$
 Nos queda ahora hallar la amplitud de dispersión $\mathcal{M}$. Notemos que para este proceso tenemos dos diagramas de Feynman posibles.
 
 ![Efecto Compton](../../assets/20250226010357.png)
+
+Utilizando la regla de Feynman con el propagador para fermiones $\frac{\gamma^{\lambda}q_{\lambda} + mc}{q^2-m^2c^2}$, con el termino de conservación $\delta^4(p_1-q-p_3)$ en el primer diagrama y $\delta^3(p_1 + p_2 - q)$ obtenemos las amplitudes:
+
+$$ 
+\mathcal{M}_1 = \frac{-g_e^2}{(p_1-p_3)^2-m_e^2c^2} \bar{u}_4 \cancel{\epsilon_2}(\cancel{p_1}-\cancel{p_3}+m_ec) \cancel{\epsilon_3^*}u_1
+$$
+
+$$ 
+\mathcal{M}_2 = \frac{-g_e^2}{(p_1+p_2)^2-m_e^2c^2} \bar{u}_4 \cancel{\epsilon_3^*} (\cancel{p_1}+\cancel{p_2}+m_ec)\cancel{\epsilon_2} u_1
+$$

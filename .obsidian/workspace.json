@@ -4,31 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "432ef4b68e54bc38",
+        "id": "598a16e604056e94",
         "type": "tabs",
         "children": [
           {
-            "id": "7e067edb40e52633",
+            "id": "41af0aedfdd06e81",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/Física de Partículas/Dispersión de particulas/Efecto Compton.md",
+                "file": "pages/Física de Partículas/Dispersión de particulas/Aniquilación electrón-positrón.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Efecto Compton"
-            }
-          },
-          {
-            "id": "46e905a075ca02f5",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "Aniquilación electrón-positrón"
             }
           }
         ]
@@ -178,25 +168,16 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "7e067edb40e52633",
+  "active": "41af0aedfdd06e81",
   "lastOpenFiles": [
-    "pages/assets/20250226005328.png",
-    "pages/Física de Partículas/Dispersión de particulas/Efecto Compton.md",
     "pages/Física de Partículas/Dispersión de particulas/Dispersión electrón-muón.md",
-    "pages/Física de Partículas/Dispersión de particulas/Aniquilación electrón-positrón.md",
-    "pages/Física Molecular/Espectros rotacionales y vibracionales.md",
-    "pages/Física Molecular/La molécula de hidrogeno.md",
-    "pages/Física Molecular/Interacción de Van Der Wals.md",
+    "pages/Física de Partículas/Dispersión de particulas/Efecto Compton.md",
     "pages/Física de Partículas/Dispersión de particulas/La regla de oro.md",
     "pages/Física de Partículas/Dispersión de particulas/Reglas de Feynman.md",
     "pages/Física de Partículas/Ecuación de Dirac.md",
-    "pages/Física Molecular/El enlace iónico.md",
-    "pages/index.md",
-    "pages/Física Nuclear/Estructura nuclear.md",
-    "pages/Física Nuclear/Desintegración beta.md",
-    "pages/Física Nuclear/Desintegración alfa.md",
+    "pages/Física de Partículas/Fotones.md",
+    "pages/Física de Partículas/Dispersión de particulas/Aniquilación electrón-positrón.md",
     "site/search/search_index.json",
-    "site/search",
     "site/Física de Partículas/Dispersión de particulas/Reglas de Feynman/index.html",
     "site/Física de Partículas/Dispersión de particulas/La regla de oro/index.html",
     "site/Física de Partículas/Dispersión de particulas/Efecto Compton/index.html",
@@ -204,7 +185,17 @@
     "site/Física de Partículas/Dispersión de particulas/Aniquilación electrón-positrón/index.html",
     "site/Física de Partículas/Fotones/index.html",
     "site/Física de Partículas/Ecuación de Dirac/index.html",
-    "site/Física de Partículas/Dispersión de particulas/Reglas de Feynman",
+    "site/Física Nuclear/Estructura nuclear/index.html",
+    "site/Física Nuclear/Desintegración beta/index.html",
+    "pages/assets/20250226005328.png",
+    "pages/Física Molecular/Espectros rotacionales y vibracionales.md",
+    "pages/Física Molecular/La molécula de hidrogeno.md",
+    "pages/Física Molecular/Interacción de Van Der Wals.md",
+    "pages/Física Molecular/El enlace iónico.md",
+    "pages/index.md",
+    "pages/Física Nuclear/Estructura nuclear.md",
+    "pages/Física Nuclear/Desintegración beta.md",
+    "pages/Física Nuclear/Desintegración alfa.md",
     "site/assets/images/favicon.png",
     "site/assets/20250304180833.png",
     "site/assets/20250304180344.png",
@@ -214,8 +205,6 @@
     "site/assets/20250222181019.png",
     "site/assets/20250222180817.png",
     "site/assets/20250222162931.png",
-    "site/assets/20250222160414.png",
-    "pages/Física de Partículas/Fotones.md",
     "El átomo de hidrogeno.md",
     "pages/Bienvenido.md",
     "docs/Física de Partículas/Dispersión de particulas/La regla de oro.md",

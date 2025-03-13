@@ -46,3 +46,64 @@ Nos queda hallar la amplitud $\mathcal{M}$. Notemos que hay dos diagramas de Fey
 
 ![Aniquilación electrón positrón](../../assets/20250226005328.png)
 
+Utilizando la regla de Feynman con el propagador para fermiones $\frac{\gamma^{\lambda}q_{\lambda} + mc}{q^2-m^2c^2}$, con el termino de conservación $\delta^4(p_1-q-p_3)$ para el primer diagrama y $\delta^4(p_1-q-p_4)$ en el segundo:
+
+$$ 
+\mathcal{M}_1 = \frac{-g_e^2}{(p_1-p_3)^2-m_e^2c^2} \bar{v}_2 \cancel{\epsilon_4}^*(\cancel{p_1}-\cancel{p_3}+m_ec) \cancel{\epsilon_3}^*u_1
+$$
+
+$$ 
+\mathcal{M}_2 = \frac{-g_e^2}{(p_1-p_4)^2-m_e^2c^2} \bar{v}_2 \cancel{\epsilon_3}^*(\cancel{p_1}-\cancel{p_4}+m_ec) \cancel{\epsilon_4}^*u_1
+$$
+
+Luego, la amplitud $\mathcal{M}$ será la suma de las amplitudes, es decir:
+
+$$
+\mathcal{M} = \mathcal{M}_1 + \mathcal{M}_2 
+$$
+
+Para hallar la amplitud, supongamos las partículas con una velocidad $v << c$, es decir aproximamos ambos, el electrón y el positrón como en reposo. Luego podemos elegir la dirección del eje $z$ como la dirección en la cual los fotones fueron emitidos. Escribimos entonces los momentos como:
+
+$$
+p_1 = (m_ec, \vec{0}) \qquad p_2 = (m_ec, \vec{0})\qquad  
+p_3 = (\frac{\hbar\omega}{c},0,0,\frac{\hbar\omega}{c}) \qquad  p_4 = (\frac{\hbar\omega}{c},0,0,-\frac{\hbar\omega}{c}) 
+$$
+
+Para ambas contribuciones, los denominadores se expresan en términos de las diferencias $p_1 - p_3$ y  $p_1 - p_4$. Reemplazando los $4$-momentos con la aproximación anterior:
+
+$$
+p_1 - p_3 = (m_ec - \frac{\hbar \omega}{c},0,0,-\frac{\hbar \omega}{c}) \Rightarrow (p_1 - p_3)^2 =  (m_ec)^2 - 2\frac{\hbar \omega}{c}m_ec 
+$$
+
+$$
+p_1 - p_4 = (m_ec - \frac{\hbar \omega}{c},0,0,+\frac{\hbar \omega}{c}) \Rightarrow (p_1 - p_4)^2 =  (m_ec)^2 - 2\frac{\hbar \omega}{c}m_ec 
+$$
+
+Ambos denominadores son iguales. Reemplazando, encontramos la constante que acompaña a $\mathcal{M}$ en términos de la constante hiperfina:
+
+$$
+\mathcal{M} \sim \frac{g_e^2}{2\hbar \omega m_e} = \frac{2\pi\alpha}{\hbar \omega m_e} = \frac{2\pi e^2}{\hbar^2 \omega m_ec}
+$$
+Veamos ahora los términos que se encuentran entre los espinores $\bar{v}$ y $u$. Notemos que aplicando el teorema de trazas a una polarización $\cancel{\epsilon}^*$ y un momento $\cancel{p}$ obtenemos que, por la condición de Coulomb:
+
+$$
+\cancel{\epsilon}^*\cancel{p} + \cancel{p} \cancel{\epsilon}^* = 2 \epsilon^* \cdot p = 0 \Rightarrow \cancel{\epsilon}^*\cancel{p} = -\cancel{p} \cancel{\epsilon}^*
+$$
+
+Luego, se puede simplificar usando la condición de onda plana para un espinor $u$, es decir $(\gamma^{\mu}p_{\mu} - mc)u = 0$. Veamos esto para ambas amplitudes $\mathcal{M}_1$ y $\mathcal{M}_2$:
+
+$$
+\cancel{\epsilon_4}^*(\cancel{p_1}-\cancel{p_3}+m_ec) \cancel{\epsilon_3}^*u_1 = \cancel{\epsilon_4}^* \cancel{\epsilon_3}^* (\cancel{p_1}-\cancel{p_3}+m_ec) u_1
+= \cancel{\epsilon_4}^* \cancel{\epsilon_3}^* \cancel{p_3} u_1$$
+
+$$  
+\cancel{\epsilon_3}^*(\cancel{p_1}-\cancel{p_4}+m_ec) \cancel{\epsilon_4}^*u_1 = 
+\cancel{\epsilon_3}^*  \cancel{\epsilon_4}^*(\cancel{p_1}-\cancel{p_4}+m_ec)u_1 
+= \cancel{\epsilon_3}^* \cancel{\epsilon_4}^* \cancel{p_4} u_1
+$$
+
+Reemplazando en la amplitud $\mathcal{M}$ obtenemos la expresión:
+
+$$
+\mathcal{M} = \frac{2\pi e^2}{\hbar^2 \omega m_ec} \bar{v}_2(\cancel{\epsilon_4}^* \cancel{\epsilon_3}^*\cancel{p_3}  + \cancel{\epsilon_3}^*  \cancel{\epsilon_4}^* \cancel{p_4})u_1
+$$
