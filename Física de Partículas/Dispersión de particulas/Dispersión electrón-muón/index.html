@@ -816,9 +816,52 @@
 
   <h1>Dispersión electrón muón</h1>
 
-<p>El muón es una partícula elemental masiva similar al electrón, con la misma carga eléctrica de <span class="arithmatex">\(-e\)</span>  y un espín de <span class="arithmatex">\(1/2\)</span>, pero con una masa mucho mayor.  Se clasifica como leptón y al igual que otros leptones, está no esta compuesto por ninguna partícula más simple.</p>
+<p>El muón es una partícula elemental masiva similar al electrón, con la misma carga eléctrica de <span class="arithmatex">\(-e\)</span>  y un espín de <span class="arithmatex">\(1/2\)</span>, pero con una masa mucho mayor, unas 206.7682830(46) veces la del electrón.  Se clasifica como leptón y al igual que otros leptones, está no esta compuesto por ninguna partícula más simple.</p>
 <p>Consideremos el experimento de dispersión:</p>
-<div class="arithmatex">\[ e^- + \mu^- \rightarrow e^- + \mu^-\]</div>
+<div class="arithmatex">\[ 
+e^- + \mu^- \rightarrow e^- + \mu^-
+\]</div>
+<p>Si consideramos a las energías <span class="arithmatex">\(E_1\)</span> y <span class="arithmatex">\(E_2\)</span> como las energías del electrón y el muón respectivamente, desde el marco de referencia del centro de masa, es decir, con los <span class="arithmatex">\(3\)</span>-momentos <span class="arithmatex">\(\vec{p}_1 = -\vec{p}_2 \equiv \vec{p}_f\)</span> del electrón y el muón, se puede probar que la sección transversal diferencial de este proceso esta dada por:</p>
+<div class="arithmatex">\[
+\frac{d\sigma}{d\Omega} = \left(\frac{\hbar c}{8\pi}\right)^2 \frac{ |\mathcal{M}|^2}{(E_1 + E_2)^2} \frac{|\vec{p}_f|}{|\vec{p}_i|}
+\]</div>
+<p>En donde <span class="arithmatex">\(|\vec{p}_f|\)</span> es la magnitud del momento de ambas partículas luego de la dispersión. Para hallar la amplitud se pueden considerar el diagrama de Feynman:</p>
+<p>La amplitud estará dada por:</p>
+<div class="arithmatex">\[ 
+\mathcal{M} = \int (\bar{u}_3(ig_e\gamma^{\mu})u_1)(\frac{-ig_{\mu\nu}}{q^2})(\bar{u}_4(ig_e\gamma^{\nu}u_2)\bar{u}_4)\delta(p_1 - q - p_3)...
+\]</div>
+<div class="arithmatex">\[
+\mathcal{M} = \frac{-g_e^2}{(p_1-p_3)^2}(\bar{u}_3\gamma^{\mu}u_1)(\bar{u}_4\gamma_{\mu}u_2)
+\]</div>
+<p>Como buscamos el modulo cuadrado de la amplitud, podemos usar el truco de Casimir. Notemos para ello que:</p>
+<div class="arithmatex">\[
+\mathcal{M} \mathcal{M}^* = \frac{g_e^4}{(p_1-p_3)^4}(\bar{u}_3\gamma^{\mu}u_1)(\bar{u}_3\gamma^{\nu}u_1)^*(\bar{u}_4\gamma_{\mu}u_2)(\bar{u}_4\gamma_{\nu}u_2)^*
+\]</div>
+<div class="arithmatex">\[
+\langle |\mathcal{M}|^2 \rangle = \frac{g_e^4}{(p_1-p_3)^4}\text{Tr}[\gamma^{\mu}(\cancel{p_1}-m_ec)\gamma^{\nu}(\cancel{p_3}-m_ec)]\text{Tr}[\gamma_{\mu}(\cancel{p_2}-m_{\mu}c)\gamma_{\nu}(\cancel{p_4}-m_{\mu}c)]
+\]</div>
+<p>Veamos la primera traza, notemos que los términos con un numero impar de elementos que dependan de matrices <span class="arithmatex">\(\gamma\)</span> se anulan, de modo que quedan solo:</p>
+<div class="arithmatex">\[
+\langle |\mathcal{M}|^2 \rangle = ...(\text{Tr}[\gamma^{\mu} \cancel{p}_1\gamma^{\nu} \cancel{p}_3]-m_e^2c^2\text{Tr}[\gamma^{\mu} \gamma^{\nu}]) ...
+\]</div>
+<p>Notemos que podemos usar teoremas de trazas para evaluar las expresiones anteriores. </p>
+<div class="arithmatex">\[
+\text{Tr}[\gamma^{\mu} \cancel{p}_1\gamma^{\nu} \cancel{p}_3] = p_{1\lambda}p_{3\sigma} \text{Tr}[\gamma^{\mu} \gamma^{\lambda} \gamma^{\nu} \gamma^{\sigma}] = 4p_{1\lambda}p_{3\sigma}(g^{\mu\lambda}g^{\nu\sigma}-g^{\mu\nu}g^{\lambda\sigma}+g^{\mu\sigma}g^{\lambda\nu})
+\]</div>
+<div class="arithmatex">\[ 
+= 4\big[ p_1^{\mu} p_3^{\nu} + p_3^{\mu} p_1^{\nu} -(p_1\cdot p_3)g^{\mu \nu} \big]
+\]</div>
+<p>Por otra parte <span class="arithmatex">\(\text{Tr}[\gamma^{\mu} \gamma^{\nu}] = 4g^{\mu \nu}\)</span>. Podemos hallar de forma análoga los términos asociados a los espinores <span class="arithmatex">\(\bar{u}_4\)</span> y <span class="arithmatex">\(u_2\)</span>. Luego:</p>
+<div class="arithmatex">\[
+\langle |\mathcal{M}|^2 \rangle = \frac{16g_e^4}{(p_1-p_3)^4}[ p_1^{\mu} p_3^{\nu} + p_3^{\mu} p_1^{\nu} -(p_1\cdot p_3 -m_e^2c^2 )g^{\mu \nu}\big][p_{2\mu} p_{4\nu} + p_{4\mu} p_{2\nu} - (p_2\cdot p_4 -m_{\mu}^2c^2)g_{\mu \nu} \big]
+\]</div>
+<div class="arithmatex">\[
+=  \frac{32g_e^4}{(p_1-p_3)^4} \big[(p_1\cdot p_2)(p_3\cdot p_4) + (p_1 \cdot p_4)
+(p_3\cdot p_2)
+\]</div>
+<div class="arithmatex">\[
+- (p_1\cdot p_3)(p_2\cdot p_4-m_{\mu}^2c^2) - (p_2 \cdot p_4)(p_1 \cdot p_3-m_e^2c^2) + 2(p_2\cdot p_4-m_{\mu}^2c^2)(p_1 \cdot p_3-m_e^2c^2)\big]
+\]</div>
 
 
 

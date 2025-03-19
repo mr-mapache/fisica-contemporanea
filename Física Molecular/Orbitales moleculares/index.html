@@ -63,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#ejemplo-molecula-de-textlif" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -407,6 +412,18 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Orbitales moleculares
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -417,6 +434,32 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-molecula-de-textlif" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo: Molécula de \(\text{LiF}\)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -798,6 +841,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-molecula-de-textlif" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo: Molécula de \(\text{LiF}\)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -815,19 +875,18 @@
   <h1>Orbitales moleculares</h1>
 
 <p>Si bien el enlace covalente en moléculas diferentes al <span class="arithmatex">\(\text{H}_2\)</span>, tanto diatómicas como poliatómicas es mas complicado, es posible estudiarlo gracias a que cualquier alteración en la estructura electrónica de un átomo debido a la proximidad de otro esta limitada a la capa externa. </p>
-<p>Para estudiar la estructura molecular se puede recurrir al <em>método de los orbitales moleculares</em> que describiremos a continuación. En lugar de comenzar con átomos definidos partimos de una configuración en los que los núcleos se encuentran en sus respectivas posiciones de equilibrio y se analiza el efecto de ir agregando los electrones a estos.</p>
-<p>Así como los electrones de un átomo tienen orbitales definidos por los números cuánticos <span class="arithmatex">\(n, l, m\)</span> y ocupan los niveles de energía mas bajo de acuerdo al principio de acuerdo a las reglas de Hund, las moléculas tienen <em>orbitales moleculares</em> y números cuánticos definidos. </p>
-<p>Los estados electrónicos moleculares pueden ser expresados como combinaciones lineales de las funciones de onda electrónica, luego para determinar su configuración electrónica, se puede asignar cada electrón a un orbital molecular. Escribimos entonces el estado electrónico de una molécula como:</p>
+<p>Para estudiar la estructura molecular se puede recurrir al <em>método de los orbitales moleculares</em> que describiremos a continuación. En lugar de comenzar con átomos definidos partimos de una configuración en la que los núcleos se encuentran en sus respectivas posiciones de equilibrio y se analiza el efecto de ir agregando los electrones a estos.</p>
+<p>Así como los electrones de un átomo tienen orbitales definidos por los números cuánticos <span class="arithmatex">\(n, l, m\)</span> y ocupan los niveles de energía mas bajos de acuerdo a las reglas de Hund, las moléculas tienen <em>orbitales moleculares</em> y números cuánticos definidos. </p>
+<p>Los estados electrónicos moleculares pueden ser expresados como combinaciones lineales de orbitales moleculares, luego para determinar su configuración electrónica, se puede asignar cada electrón a un orbital molecular</p>
 <p>Podemos expresar el estado electrónico <span class="arithmatex">\(\ket{\psi_e}\)</span> de una molécula en términos de sus orbitales moleculares <span class="arithmatex">\(\ket{\psi}\)</span>:</p>
 <div class="arithmatex">\[ 
 \ket{\psi_e} = \sum_r \psi_r \ket{\psi_r}
 \]</div>
 <p>Los cuales a su vez se pueden escribir como una combinación de orbitales atómicos <span class="arithmatex">\(\ket{\phi}\)</span>, es decir: </p>
-<p>
-<script type="math/tex; mode=display">
+<div class="arithmatex">\[
 \quad \ket{\psi_r} = \sum_{i}\phi_{ri} \ket{\phi_{ri}} 
-</script>
-Luego los orbitales moleculares se llenan con electrones de teniendo en cuenta el principio de exclusión de Pauli. </p>
+\]</div>
+<p>Luego los orbitales moleculares se llenan con electrones de teniendo en cuenta el principio de exclusión de Pauli. </p>
 <p>Volvamos al caso del ion de hidrogeno. Habíamos encontrado que podíamos aproximar sus orbitales como:</p>
 <div class="arithmatex">\[
 \ket{\psi_+} \sim \ket{\phi_a} + \ket{\phi_b} \qquad \ket{\psi_-} \sim \ket{\phi_a} - \ket{\phi_b}
@@ -851,6 +910,51 @@ Luego los orbitales moleculares se llenan con electrones de teniendo en cuenta e
 \ket{\psi_S} \sim \ket{\phi_a, \phi_b} + \ket{\phi_b, \phi_a}
 \]</div>
 <p>Vemos que esta ultima desprecia los términos iónicos <span class="arithmatex">\(\ket{\phi_a, \phi_a}\)</span> y <span class="arithmatex">\(\ket{\phi_b, \phi_b}\)</span> para los cuales los electrones se encuentran ambos en las proximidades de uno u otro núcleo. En la practica la aproximación de Heitler-London tiende a subestimar el peso de la interacción iónica, mientras que el método de los orbitales moleculares tiende a sobreestimarlo. </p>
+<h3 id="ejemplo-molecula-de-textlif">Ejemplo: Molécula de <span class="arithmatex">\(\text{LiF}\)</span></h3>
+<p>Veamos un ejemplo. La función de onda que describe el orbital ligante de la molécula de <span class="arithmatex">\(\text{LiF}\)</span> puede expresarse de la siguiente forma:</p>
+<div class="arithmatex">\[ 
+\ket{\psi} = [\frac{A}{\sqrt{2}}(\ket{\phi_{2s}, \phi_{2p_z}} + \ket{\phi_{2p_z} ,\phi_{2s}})+ B\ket{\phi_{2s},\phi_{2s}} + C\ket{\phi_{2_{p_z}},\phi_{2_{p_z}}}] \ket{\chi_S}
+\]</div>
+<p>En donde los orbitales atómicos <span class="arithmatex">\(\phi_{2s}\)</span> y <span class="arithmatex">\(\phi_{2p_z}\)</span> corresponden a los átomos <span class="arithmatex">\(\text{Li}\)</span> y <span class="arithmatex">\(\text{F}\)</span>, respectivamente. Verifiquemos que <span class="arithmatex">\(\ket{\psi}\)</span> esta normalizada si <span class="arithmatex">\(A^2 + B^2 + C^2 = 1\)</span>. Escribamos los orbitales atómicos que intervienen en la función de onda propuesta.  </p>
+<div class="arithmatex">\[ 
+\langle \psi \ket {\psi} = \frac{A^2}{2} [2 \langle \phi_{1s},\phi_{2p_z}\ket{\phi_{1s},\phi_{2p_z}} + 2\langle \phi_{2p_z},\phi_{1s}\ket{\phi_{1s},\phi_{2p_z}}]
+\]</div>
+<div class="arithmatex">\[
+B^2 \langle{\phi_{2s},\phi_{2s}} \ket{\phi_{2s},\phi_{2s}} +C^2 \langle \phi_{2_{p_z}},\phi_{2_{p_z}} \ket{\phi_{2_{p_z}},\phi_{2_{p_z}}} +
+\frac{AB}{\sqrt{2}} \langle \phi_{1s},\phi_{2p_z}\ket{\phi_{2s},\phi_{2s}} + \frac{AB}{\sqrt{2}} \langle \phi_{2p_z},\phi_{1s}\ket{\phi_{2s},\phi_{2s}}
+\]</div>
+<div class="arithmatex">\[
+\frac{AC}{\sqrt{2}} \langle \phi_{1s},\phi_{2p_z}\ket{\phi_{2p_z},\phi_{2p_z}} + \frac{AC}{\sqrt{2}} \langle \phi_{2p_z},\phi_{1s}\ket{\phi_{2p_z},\phi_{2p_z}}
++
+BC \langle{\phi_{2_{p_z}}, \phi_{2_{p_z}}} \ket{\phi_{2s},\phi_{2s}} + CB \langle \phi_{2s},\phi_{2s} \ket{\phi_{2_{p_z}}, \phi_{2_{p_z}}}
+\]</div>
+<p>En donde los orbitales atómicos se pueden escribir como:</p>
+<div class="arithmatex">\[
+\phi_{1s}(\vec{r}) = R_{10}(r)Y_0^0 = \frac{1}{\sqrt{\pi a_0^3}} e^{-r/a_0}
+\]</div>
+<div class="arithmatex">\[ 
+\phi_{2s}(\vec{r}) = R_{20}(r) Y_0^0(\theta, \phi) =  \frac{1}{\sqrt{\pi}}\left( \frac{1}{2a_0} \right)^{3/2} \left(1 - \frac{r}{2a_0}\right) e^{-r/2a_0}
+\]</div>
+<div class="arithmatex">\[ 
+\phi_{2p_z}(\vec{r}) = R_{21}(r) Y_1^0(\theta, \phi) = \sqrt{\frac{1}{4\pi}} \left( \frac{1}{3a_0} \right)^{3/2} \frac{r}{a_0} e^{-r/2a_0} \cos\theta
+\]</div>
+<p>En la expresión de <span class="arithmatex">\(\ket{\psi}\)</span> podemos ver que hay términos cruzados que contienen un solo orbital <span class="arithmatex">\(\phi_{p_z}\)</span> y se anulan ya que van como <span class="arithmatex">\(\sim \int \cos \theta d\Omega = 0\)</span> de modo que:</p>
+<div class="arithmatex">\[ 
+\langle\psi\ket{\psi} = A^2 \langle \phi_{1s},\phi_{2p_z}\ket{\phi_{1s},\phi_{2p_z}} +  
+B^2 \langle{\phi_{2s},\phi_{2s}} \ket{\phi_{2s},\phi_{2s}} +C^2 \langle \phi_{2_{p_z}},\phi_{2_{p_z}} \ket{\phi_{2_{p_z}},\phi_{2_{p_z}}}
+\]</div>
+<p>Como los orbitales atómicos del átomo de hidrogeno son ortogonales vemos que:</p>
+<div class="arithmatex">\[ 
+|\psi(\vec{r})|^2 = A^2 + B^2+C^2 = 1
+\]</div>
+<p>Y la función de onda esta normalizada cuando <span class="arithmatex">\(A^2 + B^2+C^2 = 1\)</span>. El primer termino en la función de onda propuesta es la contribución covalente, que involucra al electrón externo del <span class="arithmatex">\(\text{Li}\)</span> y un electrón en el orbital correspondiente a <span class="arithmatex">\(p_z\)</span> de la capa externa del <span class="arithmatex">\(\text{F}\)</span>. </p>
+<p>Se sabe que el término proporcional <span class="arithmatex">\(B\)</span> es muy pequeño comparado con la otra contribución iónica, es decir el término proporcional a <span class="arithmatex">\(C\)</span>. Debido a que la probabilidad de que los dos electrones se encuentren en las proximidades del átomo de litio es muy baja. Esto se debe a la baja afinidad electrónica del <span class="arithmatex">\(\text{Li}\)</span>, mientras que la energía de ionización del <span class="arithmatex">\(\text{F}\)</span> es alta, por lo que se puede asumir <span class="arithmatex">\(B \approx 0\)</span>. En esta aproximación el momento dipolar de la molécula es <span class="arithmatex">\(p = C^2 e R_0\)</span> en donde <span class="arithmatex">\(R_0\)</span> es la separación de equilibrio entre los átomos.</p>
+<p>Un valor experimental medido del momento dipolar <span class="arithmatex">\(p\)</span> de la molécula de <span class="arithmatex">\(\text{LiF}\)</span> es <span class="arithmatex">\(p=0.85eR\)</span> siendo <span class="arithmatex">\(R\)</span> la separación de equilibrio entre el <span class="arithmatex">\(\text{Li}\)</span> y el <span class="arithmatex">\(\text{F}\)</span>. Entonces <span class="arithmatex">\(C \approx 0.9\)</span> y <span class="arithmatex">\(A \approx 0.4\)</span>. Luego el carácter iónico de la molécula de <span class="arithmatex">\(\text{LiF}\)</span> es predominante, con una pequeña contribución covalente y podemos escribir su función de onda electronica como:</p>
+<p>
+<script type="math/tex; mode=display"> 
+\ket{\psi} \approx  [0.113(\ket{\phi_{2s}, \phi_{2p_z}} + \ket{\phi_{2p_z} ,\phi_{2s}}) + 0.9\ket{\phi_{2_{p_z}},\phi_{2_{p_z}}}] \ket{\chi_S}
+</script>
+La cual esta normalizada ya que <span class="arithmatex">\(0.4^2 + 0.9^2 \approx 1\)</span>.</p>
 
 
 

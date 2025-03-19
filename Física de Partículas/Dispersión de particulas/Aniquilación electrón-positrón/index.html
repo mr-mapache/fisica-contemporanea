@@ -910,6 +910,133 @@ p_1 - p_4 = (m_ec - \frac{\hbar \omega}{c},0,0,+\frac{\hbar \omega}{c}) \Rightar
 <div class="arithmatex">\[ 
 \mathcal{M} = \frac{4\pi e^2}{\hbar m_ec^2}  \bar{v}_2 \left[\vec{\epsilon}_3 \cdot \vec{\epsilon}_4 \gamma^0 + i(\vec{\epsilon}_3 \times \vec{\epsilon}_4) \begin{pmatrix} 0 &amp; \vec{\sigma} \\ \vec{\sigma} &amp; 0\end{pmatrix}\gamma^3 \right]u_1
 \]</div>
+<p>Nos interesa sin embargo el modulo cuadrado de la amplitud.  Volvamos a la expresión:</p>
+<div class="arithmatex">\[
+\mathcal{M} = -\frac{2\pi e^2}{\hbar^2 \omega m_ec} \bar{v}_2(\cancel{\epsilon}_4^* \cancel{\epsilon}_3^*\cancel{p}_3  + \cancel{\epsilon}_3^*  \cancel{\epsilon}_4^* \cancel{p}_4)u_1
+\]</div>
+<p>Y apliquemos el truco de casimir.</p>
+<div class="arithmatex">\[
+\langle|\mathcal{M}|^2\rangle = \left(\frac{2\pi e^2}{\hbar^2 \omega m_ec} \right)^2 \text{Tr}[(\cancel{\epsilon}_4^* \cancel{\epsilon}_3^*\cancel{p}_3  + \cancel{\epsilon}_3^*  \cancel{\epsilon}_4^* \cancel{p}_4)(\cancel{p}_1-m_ec)(\cancel{p}_3 \cancel{\epsilon}_3\cancel{\epsilon}_4  + \cancel{p}_4\cancel{\epsilon}_4 \cancel{\epsilon}_3)(\cancel{p}_2+m_ec)]
+\]</div>
+<p>Debemos evaluar cuatro trazas:</p>
+<div class="arithmatex">\[ 
+T_1 = \text{Tr}[\cancel{\epsilon}_4^* \cancel{\epsilon}_3^*\cancel{p}_3(\cancel{p}_1-m_ec)\cancel{p}_3 \cancel{\epsilon}_3\cancel{\epsilon}_4  (\cancel{p}_2+m_ec)]
+\]</div>
+<div class="arithmatex">\[ 
+T_2 = \text{Tr}[\cancel{\epsilon}_4^* \cancel{\epsilon}_3^*\cancel{p}_3(\cancel{p}_1-m_ec)\cancel{p}_4 \cancel{\epsilon}_4\cancel{\epsilon}_3  (\cancel{p}_2+m_ec)]
+\]</div>
+<div class="arithmatex">\[ 
+T_3 = \text{Tr}[\cancel{\epsilon}_3^* \cancel{\epsilon}_4^*\cancel{p}_4(\cancel{p}_1-m_ec)\cancel{p}_3 \cancel{\epsilon}_3\cancel{\epsilon}_4  (\cancel{p}_2+m_ec)]
+\]</div>
+<div class="arithmatex">\[ 
+T_4 = \text{Tr}[\cancel{\epsilon}_3^* \cancel{\epsilon}_4^*\cancel{p}_4(\cancel{p}_1-m_ec)\cancel{p}_4 \cancel{\epsilon}_4\cancel{\epsilon}_3  (\cancel{p}_2+m_ec)]
+\]</div>
+<p>Notemos que:</p>
+<div class="arithmatex">\[ 
+T_1 = \text{Tr}[\cancel{\epsilon}_4^* \cancel{\epsilon}_3^*\cancel{p}_3\cancel{p}_1\cancel{p}_3 \cancel{\epsilon}_3\cancel{\epsilon}_4  \cancel{p}_2] - m_e^2c^2 \text{Tr}[\cancel{\epsilon}_4^* \cancel{\epsilon}_3^*\cancel{p}_3\cancel{p}_3 \cancel{\epsilon}_3\cancel{\epsilon}_4]
+\]</div>
+<p>Como <span class="arithmatex">\(p_3 = \hbar k_3\)</span> corresponde a un fotón, el termino <span class="arithmatex">\(\cancel{p}_3\cancel{p}_3\)</span> anula la traza ya que:</p>
+<div class="arithmatex">\[ 
+\cancel{p}_3 \cancel{p}_3 = 2(p_3\cdot p_3) -\cancel{p}_3\cancel{p}_3 = - \cancel{p}_3\cancel{p}_3 \Rightarrow \cancel{p}_3\cancel{p}_3 = 0
+\]</div>
+<p>Por otra parte notemos que: </p>
+<div class="arithmatex">\[ 
+\cancel{p}_3 \cancel{p}_1 = 2(p_1\cdot p_3) - \cancel{p}_1\cancel{p}_3
+\]</div>
+<p>Luego:</p>
+<div class="arithmatex">\[ 
+T_1 = 2(p_1\cdot p_3) \text{Tr}[\cancel{\epsilon}_4^* \cancel{\epsilon}_3^*\cancel{p}_3\cancel{\epsilon}_3\cancel{\epsilon}_4  \cancel{p}_2]
+\]</div>
+<p>Notemos ahora que:</p>
+<div class="arithmatex">\[ 
+\cancel{p}_3 \cancel{\epsilon}_3 = 2(p_3 \cdot \epsilon_3) - \cancel{\epsilon}_3\cancel{p}_3 = -\cancel{\epsilon}_3\cancel{p}_3 
+\]</div>
+<p>Al aplicar esta operación, la traza queda con un termino <span class="arithmatex">\(\cancel{\epsilon}_3\cancel{\epsilon}_3^*\)</span>  la cual se puede expresar como:</p>
+<div class="arithmatex">\[ 
+\cancel{\epsilon}_3^* \cancel{\epsilon}_3 = \epsilon^*_3\cdot \epsilon_3 = -\vec{\epsilon^*_3} \cdot \vec{\epsilon_3} = -\hat{I}
+\]</div>
+<p>Ya que las polarizaciones están normalizadas. Luego:</p>
+<div class="arithmatex">\[
+T_1 = -2(p_1\cdot p_3) \text{Tr}[\cancel{\epsilon}_4^* \cancel{\epsilon}_3^*\cancel{\epsilon}_3\cancel{p}_3\cancel{\epsilon}_4  \cancel{p}_2] = 2(p_1\cdot p_3) \text{Tr}[\cancel{\epsilon}_4^* \cancel{p}_3\cancel{\epsilon}_4  \cancel{p}_2] 
+\]</div>
+<p>Trabajando el termino <span class="arithmatex">\(\cancel{p}_3\cancel{\epsilon}_4\)</span>:</p>
+<div class="arithmatex">\[
+\cancel{p}_3\cancel{\epsilon}_4 = -2(p_3\cdot \epsilon_4) + \cancel{\epsilon}_4\cancel{p}_3
+\]</div>
+<div class="arithmatex">\[
+T_1 = -4(p_1\cdot p_3)(p_3\cdot \epsilon_4) \text{Tr}[\cancel{\epsilon}_4^*  \cancel{p}_2] -  2(p_1\cdot p_3) \text{Tr}[\cancel{p}_3\cancel{p}_2]
+\]</div>
+<p>Usando que <span class="arithmatex">\(\text{Tr}[\gamma^{\mu} \gamma^{\nu}] = 4g^{\mu \nu}\)</span> obtenemos que:</p>
+<div class="arithmatex">\[ 
+T_1 = -8(p_1 \cdot p_3)(p_3 \cdot \epsilon_4)(\epsilon_3^*\cdot p_2)-4(p_1\cdot p_3)(p_3 \cdot p_2)
+\]</div>
+<p>Notemos que intercambiando <span class="arithmatex">\(p_3 \leftrightarrow p_4\)</span> y <span class="arithmatex">\(\epsilon_3 \leftrightarrow \epsilon_4\)</span>   obtenemos la traza <span class="arithmatex">\(T_4\)</span>:</p>
+<div class="arithmatex">\[ 
+T_4 = -8(p_1 \cdot p_4)(p_4\cdot \epsilon_3)(\epsilon^*_3 \cdot p_2) - 4(p_1\cdot p_4)(p_4\cdot p_2)
+\]</div>
+<p>Veamos ahora la traza <span class="arithmatex">\(T_2\)</span>. </p>
+<div class="arithmatex">\[ 
+T_2 = \text{Tr}[\cancel{\epsilon}_4^* \cancel{\epsilon}_3^*\cancel{p}_3 \cancel{p}_1\cancel{p}_4 \cancel{\epsilon}_4\cancel{\epsilon}_3 \cancel{p}_2] - m_e^2c^2 \text{Tr}[\cancel{\epsilon}_4^* \cancel{\epsilon}_3^*\cancel{p}_3 \cancel{p}_4 \cancel{\epsilon}_4\cancel{\epsilon}_3]
+\]</div>
+<p>Analicemos el ultimo termino. Notemos que:</p>
+<div class="arithmatex">\[
+\cancel{\epsilon}_4 \cancel{\epsilon}_3 = 2(\epsilon_4\cdot \epsilon_3) - \cancel{\epsilon}_3 \cancel{\epsilon}_4 
+\]</div>
+<p>Luego:</p>
+<div class="arithmatex">\[ 
+T_2 = ... -2m_e^2c^2(\epsilon_4\cdot \epsilon_3) \text{Tr}[\cancel{\epsilon}_4^* \cancel{\epsilon}_3^*\cancel{p}_3 \cancel{p}_4] - m_e^2c^2 \text{Tr}[\cancel{\epsilon}_4^* \cancel{\epsilon}_3^*\cancel{p}_3 \cancel{p}_4 \cancel{\epsilon}_3 \cancel{\epsilon}_4]
+\]</div>
+<p>Por la propiedad cíclica de las trazas podemos reordenar los términos del ultimo termino y juntar de esta forma <span class="arithmatex">\(\cancel{\epsilon}_4 \cancel{\epsilon}_4^*\)</span> y <span class="arithmatex">\(\cancel{\epsilon}_3 \cancel{\epsilon}_3^*\)</span> ambos iguales a <span class="arithmatex">\(-\hat{I}\)</span>. Usando además que <span class="arithmatex">\(\text{Tr}[\gamma^{\mu} \gamma^{\nu}] = 4g^{\mu \nu}\)</span> De modo que:</p>
+<div class="arithmatex">\[ 
+T_2 = ...- m_e^2c^2 \text{Tr}[\cancel{\epsilon}_4^* \cancel{\epsilon}_3^*\cancel{p}_3 \cancel{p}_4 \cancel{\epsilon}_3 \cancel{\epsilon}_4] = - m_e^2c^2 \text{Tr}[\cancel{p}_3 \cancel{p}_4] = -4m_e^2c^2(p_3\cdot p_4)
+\]</div>
+<p>Para hallar <span class="arithmatex">\(\text{Tr}[\cancel{\epsilon}_4^* \cancel{\epsilon}_3^*\cancel{p}_3 \cancel{p}_4]\)</span> usamos la propiedad <span class="arithmatex">\(\text{Tr}[\gamma^{\mu}\gamma^{\nu}\gamma^{\lambda}\gamma^{\sigma}] = 4(g^{\mu \nu}g^{\lambda \sigma} - g^{\mu \lambda} g^{\nu \sigma} + g^{\mu \sigma}g^{\nu \lambda})\)</span> y vemos que:</p>
+<div class="arithmatex">\[
+\text{Tr}[\cancel{\epsilon}_4^* \cancel{\epsilon}_3^*\cancel{p}_3 \cancel{p}_4] = 4[(\epsilon^*_4 \cdot \epsilon^*_3)(p_3 \cdot p_4) - (\epsilon^*_4 \cdot p_3)(\epsilon^*_3\cdot p_4)]
+\]</div>
+<div class="arithmatex">\[ 
+\Rightarrow T_2 = ... -8m_e^2c^2(\epsilon_4\cdot \epsilon_3)[(\epsilon^*_4 \cdot \epsilon^*_3)(p_3 \cdot p_4) - (\epsilon^*_4 \cdot p_3)(\epsilon^*_3\cdot p_4) + \frac{1}{2}(p_3\cdot p_4)]
+\]</div>
+<p>En donde uno de los términos se anula por ortogonalidad de los momentos y las polarizaciones. Resta hallar el primer termino:</p>
+<div class="arithmatex">\[ 
+T_2 = \text{Tr}[\cancel{\epsilon}_4^* \cancel{\epsilon}_3^*\cancel{p}_3 \cancel{p}_1\cancel{p}_4 \cancel{\epsilon}_4\cancel{\epsilon}_3 \cancel{p}_2] - ...
+\]</div>
+<div class="arithmatex">\[
+\text{Tr}[\cancel{\epsilon}_4^* \cancel{\epsilon}_3^*\cancel{p}_3 \cancel{p}_1\cancel{p}_4 \cancel{\epsilon}_4\cancel{\epsilon}_3 \cancel{p}_2] = 2(\epsilon_3\cdot p_2) \text{Tr}[\cancel{\epsilon}_4^* \cancel{\epsilon}_3^*\cancel{p}_3 \cancel{p}_1\cancel{p}_4 \cancel{\epsilon}_4] - 
+\text{Tr}[\cancel{\epsilon}_4^* \cancel{\epsilon}_3^*\cancel{p}_3 \cancel{p}_1\cancel{p}_4 \cancel{\epsilon}_4 \cancel{p}_2 \cancel{\epsilon}_3 ]
+\]</div>
+<div class="arithmatex">\[
+= -2(\epsilon_3 \cdot \epsilon^*_4) \text{Tr}[\cancel{\epsilon}_3^*\cancel{p}_3 \cancel{p}_1\cancel{p}_4 \cancel{\epsilon}_4 \cancel{p}_2]
+\]</div>
+<p>Usamos ahora la conservación del momento:</p>
+<div class="arithmatex">\[ 
+\cancel{p}_1 + \cancel{p}_2 = \cancel{p}_3 + \cancel{p}_4
+\]</div>
+<div class="arithmatex">\[
+\cancel{p}_3 \cancel{p}_1 = \cancel{p}_3 \cancel{p}_4 - \cancel{p}_3 \cancel{p}_2
+\]</div>
+<div class="arithmatex">\[
+-2(\epsilon_3 \cdot \epsilon^*_4) \text{Tr}[\cancel{\epsilon}_3^*\cancel{p}_3 \cancel{p}_1\cancel{p}_4 \cancel{\epsilon}_4 \cancel{p}_2] = 2(\epsilon_3 \cdot \epsilon^*_4) \text{Tr}[\cancel{\epsilon}_3^*\cancel{p}_3 \cancel{p}_2\cancel{p}_4 \cancel{\epsilon}_4 \cancel{p}_2]
+\]</div>
+<div class="arithmatex">\[
+=  4(\epsilon_3 \cdot \epsilon^*_4)(p_2\cdot p_4) \text{Tr}[\cancel{\epsilon}_3^*\cancel{p}_3 \cancel{\epsilon}_4 \cancel{p}_2] -  
+2(\epsilon_3 \cdot \epsilon^*_4) \text{Tr}[\cancel{\epsilon}_3^*\cancel{p}_3 \cancel{p}_4\cancel{p}_2 \cancel{\epsilon}_4 \cancel{p}_2]
+\]</div>
+<div class="arithmatex">\[
+=  4(\epsilon_3 \cdot \epsilon^*_4)(p_2\cdot p_4) \text{Tr}[\cancel{\epsilon}_3^*\cancel{p}_3 \cancel{\epsilon}_4 \cancel{p}_2] -  
+4(\epsilon_3 \cdot \epsilon^*_4)(p_2\cdot \epsilon_4) \text{Tr}[\cancel{\epsilon}_3^*\cancel{p}_3 \cancel{p}_4 \cancel{p}_2]
+\]</div>
+<p>Luego usando teorema de trazas y reemplazando, obtenemos finalmente:</p>
+<div class="arithmatex">\[
+T_2 = 
+16(\epsilon_3 \cdot \epsilon^*_4)(p_2\cdot p_4)\big[(\epsilon_3^*\cdot p_2)(p_3 \cdot \epsilon_4)-(\epsilon_3^*\cdot\epsilon_4)(p_3\cdot p_2)]
+\]</div>
+<div class="arithmatex">\[
+-16(\epsilon_3 \cdot \epsilon^*_4)(p_2\cdot \epsilon_4)\big[(\epsilon^*_3\cdot p_2)(p_3 \cdot p_4) - (\epsilon_3^*\cdot p_4)(p_3\cdot p_2) \big] 
+\]</div>
+<div class="arithmatex">\[
+-8m_e^2c^2(\epsilon_4\cdot \epsilon_3)[(\epsilon^*_4 \cdot \epsilon^*_3)(p_3 \cdot p_4) - (\epsilon^*_4 \cdot p_3)(\epsilon^*_3\cdot p_4) + \frac{1}{2}(p_3\cdot p_4)]
+\]</div>
 
 
 
